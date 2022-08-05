@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "527467409003",
+    "project_id": "w-01-1f8cc",
+    "storage_bucket": "w-01-1f8cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527467409003:android:29e57da4db3d96cbd34b2e",
+        "android_client_info": {
+          "package_name": "com.DGakademi.simpleloginapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527467409003-usfc7r8imbj577d25els3tkcbsjbin1g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.DGakademi.simpleloginapp",
+            "certificate_hash": "59eb4bb3143d667c1698e75fb542a5cbdf9c8e5c"
+          }
+        },
+        {
+          "client_id": "527467409003-dvsf3sk0i5lq51evmks0a7ath8guh01u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-ns_Q1zk_XblU7LYpkRwOOfoKOh7plkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527467409003-dvsf3sk0i5lq51evmks0a7ath8guh01u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
