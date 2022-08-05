@@ -10,7 +10,7 @@ public class BMW extends Factory {
 
     @Override
     public String getFactoryName() {
-        String Name = "bmw";
+        String Name = "BMW";
         return Name;
     }
 
