@@ -28,7 +28,7 @@ public class FactoryList {
         return factoryName;
     }
 
-    public String getProducedDoor() {
+    public String getProducedDoors() {
         return producedDoor;
     }
 

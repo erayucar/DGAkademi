@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="140dp"
             android:layout_marginTop="40dp"
-            android:text="Factory Name"
+            android:text="Amount of Doors"
             android:textSize="15dp" />
 
         <TextView
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="140dp"
             android:layout_marginTop="80dp"
-            android:text="Factory Name"
+            android:text="Amount of Engines"
             android:textSize="15dp" />
 
         <TextView
@@ -56,7 +56,7 @@
             android:layout_marginStart="140dp"
             android:layout_marginTop="120dp"
             android:layout_marginBottom="10dp"
-            android:text="Factory Name"
+            android:text="Amount of Wheels"
             android:textSize="15dp" />
 
 

@@ -29,6 +29,7 @@ public class LogInActivity extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +37,7 @@ public class LogInActivity extends AppCompatActivity {
         editEmail = (EditText)findViewById(R.id.Log_in_editMail);
         editPassword = (EditText)findViewById(R.id.Log_in_editPassword);
         SignUp = findViewById(R.id.SignUpButton);
+
 
 
         mAuth = FirebaseAuth.getInstance();
@@ -79,6 +81,7 @@ public class LogInActivity extends AppCompatActivity {
             Toast.makeText(this, "Email Ve Şifre Boş Olamaz.", Toast.LENGTH_SHORT).show();
 
     }
+
 
 
 }
