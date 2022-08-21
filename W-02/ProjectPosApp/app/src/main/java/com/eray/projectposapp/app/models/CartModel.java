@@ -4,6 +4,7 @@ public class CartModel {
     int image;
     String name,price;
 
+
     public CartModel(int image, String name, String price) {
         this.image = image;
         this.name = name;
@@ -19,6 +20,7 @@ public class CartModel {
         String stringImage = String.valueOf(image);
         return stringImage;
     }
+
 
     public void setImage(int image) {
         this.image = image;

@@ -39,7 +39,7 @@ public class FragmentMyCart extends Fragment {
         recyclerView = view.findViewById(R.id.cart_recyc);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        setDatas();
+
 
 
         return view;

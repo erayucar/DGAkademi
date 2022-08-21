@@ -1,5 +1,6 @@
 package com.eray.projectposapp.app.Adapter;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,8 +51,8 @@ public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ViewHolder> {
             @Override
             public void onClick(View view) {
                 String currentValue = textQuantity.getText().toString();
+                quantity = Integer.parseInt(currentValue);
                 if (quantity != 0) {
-                    quantity = Integer.parseInt(currentValue);
                     quantity--;
                     textQuantity.setText(String.valueOf(quantity));
                 }
