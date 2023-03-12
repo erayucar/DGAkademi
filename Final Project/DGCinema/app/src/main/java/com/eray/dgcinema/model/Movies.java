@@ -2,7 +2,9 @@ package com.eray.dgcinema.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Movies {
+import java.io.Serializable;
+
+public class Movies implements Serializable {
 
 private String poster_path;
 private String overview;

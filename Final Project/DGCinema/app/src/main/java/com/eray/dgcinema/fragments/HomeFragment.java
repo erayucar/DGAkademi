@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class HomeFragment extends Fragment implements MovieAdapter.ItemClikListener {
+public class HomeFragment extends Fragment {
     private ArrayList<Movies> list;
     private MovieAdapter adapter;
     private RecyclerView recyclerView;
@@ -42,7 +42,7 @@ public class HomeFragment extends Fragment implements MovieAdapter.ItemClikListe
     }
     public void putDataIntoRecyclerView(ArrayList<Movies> movieList) {
         this.list = movieList;
-        this.adapter = new MovieAdapter(this.getContext(), list, this);
+        this.adapter = new MovieAdapter(this.getContext(), list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
         recyclerView.setAdapter(adapter);
         recyclerView.setOnClickListener(new View.OnClickListener() {
@@ -53,15 +53,6 @@ public class HomeFragment extends Fragment implements MovieAdapter.ItemClikListe
         });
     }
 
-    @Override
-    public void onItemClick(Movies movies) {
-
-    }
-
-    @Override
-    public void recyItemClick(List<Movies> moviesList, int position) {
-
-    }
 
 
 }

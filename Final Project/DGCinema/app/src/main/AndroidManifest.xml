@@ -14,7 +14,7 @@
         android:theme="@style/Theme.DGCinema"
         tools:targetApi="31">
         <activity
-            android:name=".DetailActivity"
+            android:name=".views.DetailActivity"
             android:exported="false" />
         <activity
             android:name=".views.HomeActivity"

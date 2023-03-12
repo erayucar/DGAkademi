@@ -2,6 +2,8 @@ package com.eray.dgcinema.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.graphics.Movie;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -13,7 +15,7 @@ import com.eray.dgcinema.model.Movies;
 
 import java.util.List;
 
-public class DetailActivity extends AppCompatActivity implements MovieAdapter.ItemClikListener {
+public class DetailActivity extends AppCompatActivity {
     private TextView overview;
     private TextView voteAvr;
     private TextView moiveName;
@@ -29,20 +31,14 @@ public class DetailActivity extends AppCompatActivity implements MovieAdapter.It
         moiveName = findViewById(R.id.movie_name);
         language = findViewById(R.id.language);
         poster = findViewById(R.id.image_poster);
-    }
 
-    @Override
-    public void onItemClick(Movies movies) {
-
-    }
-
-    @Override
-    public void recyItemClick(List<Movies> moviesList, int position) {
-        this.moviesList = moviesList;
-        moiveName.setText(moviesList.get(position).getOriginal_title());
-        overview.setText(moviesList.get(position).getOverview());
-        String url = "https://image.tmdb.org/t/p/w500" + moviesList.get(position).getPoster_path();
+        Intent intent = getIntent();
+        Movies selectedMovies = (Movies) intent.getSerializableExtra("movies");
+        overview.setText(selectedMovies.getOverview());
+        String url = "https://image.tmdb.org/t/p/w500" + selectedMovies.getPoster_path();
         Glide.with(this).load(url).into(poster);
-        voteAvr.setText( String.valueOf(moviesList.get(position).getVote_average()));
+        moiveName.setText(selectedMovies.getOriginal_title());
+        language.setText(selectedMovies.getOriginal_language());
     }
+
 }

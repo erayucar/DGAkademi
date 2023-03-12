@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/image_poster"
         android:layout_width="match_parent"
-        android:layout_height="280dp" />
+        android:layout_height="203dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

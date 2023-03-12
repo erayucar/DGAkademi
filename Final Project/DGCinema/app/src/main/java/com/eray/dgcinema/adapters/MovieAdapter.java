@@ -24,13 +24,12 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
     private Context context;
     private List<Movies> moviesList;
-    private ItemClikListener clickListener;
+
     private SharedPreferences sharedPreferences;
 
-    public MovieAdapter(Context context, ArrayList<Movies> movies, ItemClikListener clickListener){
+    public MovieAdapter(Context context, ArrayList<Movies> movies ){
         this.moviesList = movies;
         this.context = context;
-        this.clickListener = clickListener;
     }
 
     @NonNull
@@ -50,9 +49,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), DetailActivity.class);
-                view.getContext().startActivity(intent);
-                clickListener.recyItemClick(moviesList, pos);
+                Intent intent = new Intent(holder.itemView.getContext(), DetailActivity.class);
+                intent.putExtra("movies",moviesList.get(holder.getAdapterPosition()));
+                holder.itemView.getContext().startActivity(intent);
 
             }
         });
@@ -78,9 +77,5 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             vote_avr = itemView.findViewById(R.id.rate_imdb);
         }
     }
-public interface ItemClikListener{
-        public void onItemClick(Movies movies);
-    public void recyItemClick(List<Movies> moviesList, int position);
-}
 
 }
